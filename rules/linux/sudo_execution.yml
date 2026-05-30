@@ -1,0 +1,16 @@
+title: Sudo Command Execution
+id: RH-LNX-002
+description: Detects sudo command execution in Linux authentication logs
+category: privilege_activity
+logsource:
+  product: linux
+  category: auth
+detection:
+  selection:
+    message_contains:
+      - "sudo:"
+      - "COMMAND="
+  condition: selection
+level: medium
+tags:
+  - attack.t1548

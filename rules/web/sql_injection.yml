@@ -1,0 +1,17 @@
+title: SQL Injection Attempt
+id: RH-WEB-001
+description: Detects possible SQL injection patterns in URL
+category: web_attack
+logsource:
+  product: web
+  category: http
+detection:
+  selection:
+    url_contains:
+      - "' OR"
+      - "UNION SELECT"
+      - "1=1"
+  condition: selection
+level: high
+tags:
+  - attack.t1190

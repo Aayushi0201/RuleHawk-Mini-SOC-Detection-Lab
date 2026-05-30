@@ -1,0 +1,17 @@
+title: Suspicious PowerShell Encoded Command
+id: RH-WIN-001
+description: Detects PowerShell execution with encoded command argument
+category: execution
+logsource:
+  product: windows
+  category: process_creation
+detection:
+  selection:
+    process_name: powershell.exe
+    command_line_contains:
+      - "-enc"
+      - "-encodedcommand"
+  condition: selection
+level: high
+tags:
+  - attack.t1059.001

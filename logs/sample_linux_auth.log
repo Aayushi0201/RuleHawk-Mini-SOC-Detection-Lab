@@ -1,0 +1,8 @@
+May 16 10:24:01 ubuntu sshd[1234]: Failed password for root from 45.33.21.10 port 22 ssh2
+May 16 10:24:15 ubuntu sshd[1235]: Failed password for root from 45.33.21.10 port 22 ssh2
+May 16 10:24:35 ubuntu sshd[1236]: Failed password for root from 45.33.21.10 port 22 ssh2
+May 16 10:25:02 ubuntu sshd[1237]: Failed password for root from 45.33.21.10 port 22 ssh2
+May 16 10:25:27 ubuntu sshd[1238]: Failed password for root from 45.33.21.10 port 22 ssh2
+May 16 10:25:58 ubuntu sshd[1239]: Failed password for root from 45.33.21.10 port 22 ssh2
+May 16 10:26:40 ubuntu sshd[1240]: Accepted password for admin from 45.33.21.10 port 22 ssh2
+May 16 10:27:10 ubuntu sudo: aayushi : TTY=pts/0 ; PWD=/home/aayushi ; USER=root ; COMMAND=/bin/cat /etc/shadow

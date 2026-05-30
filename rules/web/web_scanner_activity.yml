@@ -1,0 +1,24 @@
+title: Web Scanner Activity
+id: RH-WEB-003
+description: Detects repeated 404 responses from the same source IP, indicating possible web scanning or directory brute forcing
+category: reconnaissance
+logsource:
+  product: web
+  category: http
+detection:
+  selection:
+    status_contains:
+      - "404"
+  condition: selection
+exclusions:
+  url_contains:
+    - "apple-touch-icon"
+    - "favicon.ico"
+    - "robots.txt"
+aggregation:
+  group_by: src_ip
+  threshold: 5
+  condition: count_greater_equal
+level: medium
+tags:
+  - attack.t1595

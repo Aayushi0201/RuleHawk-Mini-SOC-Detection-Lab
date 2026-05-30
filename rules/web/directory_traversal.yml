@@ -1,0 +1,17 @@
+title: Directory Traversal Attempt
+id: RH-WEB-002
+description: Detects directory traversal patterns in HTTP requests
+category: web_attack
+logsource:
+  product: web
+  category: http
+detection:
+  selection:
+    url_contains:
+      - "../"
+      - "..\\"
+      - "/etc/passwd"
+  condition: selection
+level: high
+tags:
+  - attack.t1083

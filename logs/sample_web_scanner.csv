@@ -1,0 +1,10 @@
+timestamp,source,event_type,user,src_ip,process_name,command_line,url,status,message
+2026-05-16 11:00:01,web,http,,88.77.66.55,,,"/admin",404,"Admin panel probing"
+2026-05-16 11:00:05,web,http,,88.77.66.55,,,"/wp-login.php",404,"WordPress login page probing"
+2026-05-16 11:00:10,web,http,,88.77.66.55,,,"/phpmyadmin",404,"phpMyAdmin probing"
+2026-05-16 11:00:15,web,http,,88.77.66.55,,,"/backup.zip",404,"Backup file probing"
+2026-05-16 11:00:20,web,http,,88.77.66.55,,,"/config.php",404,"Config file probing"
+2026-05-16 11:00:25,web,http,,88.77.66.55,,,"/.env",404,"Environment file probing"
+2026-05-16 11:01:10,web,http,,103.22.44.12,,,"/index.html",200,"Normal homepage request"
+2026-05-16 11:01:15,web,http,,103.22.44.12,,,"/about.html",200,"Normal page request"
+2026-05-16 11:01:20,web,http,,103.22.44.12,,,"/contact.html",200,"Normal page request"

